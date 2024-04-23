@@ -39,6 +39,107 @@
     justify-content: space-between;
 }
 
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: rgba(93, 111, 137, 0.052);
+}
+
+.multiDivContainer{
+    width: 80%;
+    /* background-color: blue; */
+    max-width: 850px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featureCard{
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    border: 1px solid rgba(194, 202, 225, 0.379);
+    padding-bottom: 10px;
+}
+
+.sectionHeading{
+    font-weight: 600;
+}
+
+.featureImage{
+    height: 150px;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnersContainer{
+    width: 80%;
+    /* background-color: blue; */
+    max-width: 850px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.propertyFeatured{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.featured{
+    width: 42%;
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.featured h2{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(0, 113, 212);
+}
+
+.featured p{
+    font-size: 0.9rem;
+    color: rgb(133, 153, 180);
+    margin-top: 5px;
+}
+
+.partners{
+    height: 100px;
+}
+
+.partners:first-child{
+    height: 75px;
+}
+
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(228, 234, 242, 0.727);
+}
+
 @media screen and (max-width: 950px){
     .home{
         height: 60vh;
@@ -50,6 +151,14 @@
         flex-direction: column;
         height: auto;
         min-width: 0;
+    }
+
+    .propertyFeatured{
+        flex-direction: column;
+    }
+
+    .featured{
+        width: auto;
     }
 
     .searchInputs{
@@ -64,5 +173,34 @@
     .inputFields {
         flex-direction: column;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .multiDivContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partnersContainer{
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .featureCard{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .partnersContainer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .sectionHeading{
+        font-size: 1.3rem;
     }
 }
