@@ -1,0 +1,35 @@
+.properties {
+    height: calc(100vh - 70px);
+    background-color: rgba(228, 234, 242, 0.727);
+    width: 100%;
+    margin-top: 70px;
+    overflow-y: auto;
+}
+
+.cards {
+    max-width: 1480px;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1698px) {
+    .cards {
+        width: 740px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .cards {
+        width: 372px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .cards{
+        width: 90%;
+        min-width: 300px;
+    }
+}

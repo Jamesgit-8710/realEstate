@@ -1,0 +1,91 @@
+.listing{
+    height: calc(100vh - 170px);
+    background-color: rgba(228, 234, 242, 0.727);
+    width: calc(100% - 200px);
+    margin-top: 70px;
+    overflow-y: auto;
+    display: flex;
+    padding: 50px 100px;
+    justify-content: center;
+}
+
+.listingLeftImage{
+    height: 100%;
+    width: 50%;
+    min-width: 250px;
+    background-color: white;
+    background-image: url('../../assets/register.jpg');
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.listingForm{
+    width: 30%;
+    min-width: 141px;
+    background-color: white;
+    padding: 20px 50px;
+    overflow-y: auto;
+    border-left: 10px solid rgba(228, 234, 242, 0.727);
+}
+
+.listingFormHeading{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(61, 69, 103);
+}
+
+.listingInputs{
+    margin-top: 10px !important;
+}
+
+.listingTagline{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 50px;
+    word-spacing: 5px;
+}
+
+/* .listingForm::-webkit-scrollbar{
+    display: none;
+} */
+
+@media screen and (max-width: 950px) {
+    .listing{
+        height: calc(100vh - 128px);
+        width: auto;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .listingTagline{
+        margin: 10px;
+    }
+
+    .listingLeftImage{
+        height: auto;
+        width: 100%;
+        background-position: top;
+        text-align: center;
+    }
+
+    .listingForm{
+        width: calc(100% - 110px);
+        height: auto;
+        margin-top: 0;
+        border-left: 10px solid white;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .listingLeftImage h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .listingLeftImage h2{
+        font-size: 1rem;
+    }
+}

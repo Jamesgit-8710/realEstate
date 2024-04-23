@@ -1,0 +1,83 @@
+.card{
+    height: 430px;
+    width: 350px;
+    background-color: white;
+    margin: 20px 10px 0px;
+    /* margin-top: 20px; */
+}
+
+.propertyImage{
+    height: 50%;
+    width: 100%;
+    background-image: url('../../../assets/propertyImage.jpg');
+    background-color: white;
+    background-size: cover;
+}
+
+.propertyBrief{
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details{
+    width: 90%;
+    height: 190px;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.details h4, p, h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.buildingName{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.address{
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #9ab3bf;
+}
+
+.price{
+    margin-top: 20px;
+    color: rgb(0, 136, 255);
+}
+
+.facilities{
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.facility{
+    display: flex;
+}
+
+.moreDetails{
+    width: 100px;
+    margin-top: 20px;
+    color: rgb(0, 136, 255);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.moreDetails:hover{
+    color: rgb(0, 122, 228);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 390px){
+    .card{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
